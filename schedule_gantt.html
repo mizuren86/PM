@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>週行程 5/4–5/10</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #0f1117; color: #e0e0e0; padding: 32px; }
+
+  h1 { font-size: 20px; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 13px; color: #555; margin-bottom: 28px; }
+
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+
+  .day-col { display: flex; flex-direction: column; gap: 6px; }
+
+  .day-header {
+    text-align: center; padding: 10px 4px;
+    border-radius: 8px; margin-bottom: 2px;
+    background: #161620; border: 1px solid #222;
+  }
+  .day-header.today { background: #1a1a2e; border-color: #4f46e5; }
+  .day-header .dow { font-size: 10px; color: #666; font-weight: 700; letter-spacing: 1.5px; }
+  .day-header .date { font-size: 24px; font-weight: 800; color: #fff; line-height: 1.2; margin: 2px 0; }
+  .day-header .hours { font-size: 10px; color: #444; }
+  .today-badge {
+    display: inline-block; font-size: 9px; background: #4f46e5;
+    color: #fff; border-radius: 4px; padding: 1px 6px; margin-top: 4px; font-weight: 700;
+  }
+
+  .block {
+    border-radius: 8px; padding: 9px 11px;
+    font-size: 12px; line-height: 1.5;
+    border-left: 3px solid transparent;
+  }
+  .block .title { font-weight: 700; display: block; margin-bottom: 1px; font-size: 12px; }
+  .block .desc  { font-size: 10px; opacity: 0.7; display: block; }
+  .block .time  { font-size: 10px; opacity: 0.5; display: block; margin-top: 3px; }
+
+  .badge {
+    display: inline-block; font-size: 9px; border-radius: 3px;
+    padding: 1px 5px; margin-left: 5px; vertical-align: middle; font-weight: 800;
+  }
+  .badge-red    { background: #dc2626; color: #fff; }
+  .badge-orange { background: #d97706; color: #fff; }
+
+  .c-japan     { background: #0e2010; border-color: #4ade80; color: #86efac; }
+  .c-hexschool { background: #0b1d35; border-color: #3b82f6; color: #93c5fd; }
+  .c-uma       { background: #240d0d; border-color: #ef4444; color: #fca5a5; }
+  .c-project1  { background: #261508; border-color: #f97316; color: #fdba74; }
+  .c-sysdesign { background: #082424; border-color: #14b8a6; color: #5eead4; }
+  .c-gaming    { background: #190d2e; border-color: #a855f7; color: #d8b4fe; }
+  .c-meeting   { background: #221d06; border-color: #eab308; color: #fde047; }
+  .c-life      { background: #161616; border-color: #374151; color: #6b7280; }
+
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px;
+    padding-top: 20px; border-top: 1px solid #1e1e1e;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #666; }
+  .legend-dot  { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<h1>週行程安排 · 2026/5/4 – 5/10</h1>
+<p class="subtitle">平日 2–3hr　｜　假日 4–6hr　｜　草稿確認用</p>
+
+<div class="calendar">
+
+  <!-- MON 5/4 -->
+  <div class="day-col">
+    <div class="day-header today">
+      <div class="dow">MON</div>
+      <div class="date">5/4</div>
+      <div class="hours">2–3hr</div>
+      <span class="today-badge">TODAY</span>
+    </div>
+    <div class="block c-japan">
+      <span class="title">日本旅遊初稿<span class="badge badge-red">今天！</span></span>
+      <span class="desc">上傳景點起頭</span>
+      <span class="time">20:00–21:00</span>
+    </div>
+    <div class="block c-gaming">
+      <span class="title">手遊</span>
+      <span class="time">21:00–21:30</span>
+    </div>
+    <div class="block c-life">
+      <span class="title">休息 / 收工</span>
+      <span class="desc">洗澡、放空、準備睡</span>
+      <span class="time">21:30–23:00</span>
+    </div>
+  </div>
+
+  <!-- TUE 5/5 -->
+  <div class="day-col">
+    <div class="day-header">
+      <div class="dow">TUE</div>
+      <div class="date">5/5</div>
+      <div class="hours">2–3hr</div>
+    </div>
+    <div class="block c-hexschool">
+      <span class="title">六角學院<span class="badge badge-orange">D-5</span></span>
+      <span class="desc">影片① 觀看</span>
+      <span class="time">~3hr（整段）</span>
+    </div>
+    <div class="block c-gaming">
+      <span class="title">手遊</span>
+      <span class="time">~30min</span>
+    </div>
+  </div>
+
+  <!-- WED 5/6 -->
+  <div class="day-col">
+    <div class="day-header">
+      <div class="dow">WED</div>
+      <div class="date">5/6</div>
+      <div class="hours">2–3hr</div>
+    </div>
+    <div class="block c-uma">
+      <span class="title">umaclaude</span>
+      <span class="desc">功能開發</span>
+      <span class="time">~1hr</span>
+    </div>
+    <div class="block c-meeting">
+      <span class="title">SP1 週會</span>
+      <span class="desc">20:00 家管系統</span>
+      <span class="time">30min–1hr</span>
+    </div>
+    <div class="block c-gaming">
+      <span class="title">手遊</span>
+      <span class="time">~30min</span>
+    </div>
+  </div>
+
+  <!-- THU 5/7 -->
+  <div class="day-col">
+    <div class="day-header">
+      <div class="dow">THU</div>
+      <div class="date">5/7</div>
+      <div class="hours">2–3hr</div>
+    </div>
+    <div class="block c-hexschool">
+      <span class="title">六角學院<span class="badge badge-orange">D-3</span></span>
+      <span class="desc">影片② 觀看</span>
+      <span class="time">~3hr（整段）</span>
+    </div>
+    <div class="block c-gaming">
+      <span class="title">手遊</span>
+      <span class="time">~30min</span>
+    </div>
+  </div>
+
+  <!-- FRI 5/8 -->
+  <div class="day-col">
+    <div class="day-header">
+      <div class="dow">FRI</div>
+      <div class="date">5/8</div>
+      <div class="hours">2–3hr</div>
+    </div>
+    <div class="block c-hexschool">
+      <span class="title">六角學院<span class="badge badge-orange">D-2</span></span>
+      <span class="desc">作業①② 完成</span>
+      <span class="time">~2hr</span>
+    </div>
+    <div class="block c-uma">
+      <span class="title">umaclaude</span>
+      <span class="desc">上線準備</span>
+      <span class="time">~1hr</span>
+    </div>
+    <div class="block c-gaming">
+      <span class="title">手遊</span>
+      <span class="time">~30min</span>
+    </div>
+  </div>
+
+  <!-- SAT 5/9 -->
+  <div class="day-col">
+    <div class="day-header">
+      <div class="dow">SAT</div>
+      <div class="date">5/9</div>
+      <div class="hours">4–6hr</div>
+    </div>
+    <div class="block c-project1">
+      <span class="title">Side Project 1</span>
+      <span class="desc">家管系統開發</span>
+      <span class="time">~2hr</span>
+    </div>
+    <div class="block c-uma">
+      <span class="title">umaclaude</span>
+      <span class="desc">衝刺上線</span>
+      <span class="time">~2hr</span>
+    </div>
+    <div class="block c-gaming">
+      <span class="title">手遊 + 賽馬娘</span>
+      <span class="time">~3hr</span>
+    </div>
+  </div>
+
+  <!-- SUN 5/10 -->
+  <div class="day-col">
+    <div class="day-header">
+      <div class="dow">SUN</div>
+      <div class="date">5/10</div>
+      <div class="hours">4–6hr</div>
+    </div>
+    <div class="block c-sysdesign">
+      <span class="title">系統設計 Live ①</span>
+      <span class="desc">10:00 開始</span>
+      <span class="time">~1–2hr</span>
+    </div>
+    <div class="block c-hexschool">
+      <span class="title">六角學院<span class="badge badge-red">今天截止</span></span>
+      <span class="desc">最終確認提交 23:59</span>
+      <span class="time">~1hr buffer</span>
+    </div>
+    <div class="block c-gaming">
+      <span class="title">手遊 + 賽馬娘</span>
+      <span class="time">~3hr</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#4ade80"></div>日本旅遊</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>六角學院</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div>umaclaude</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f97316"></div>Side Project 1</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#14b8a6"></div>系統設計課程</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#a855f7"></div>手遊/賽馬娘</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#eab308"></div>週會</div>
+</div>
+
+</body>
+</html>
